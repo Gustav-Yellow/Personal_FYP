@@ -1,0 +1,13 @@
+Task: CR_Generalist_vs_Silver (Silver Standard Evaluation)
+Agreement Rate: 0.5400
+
+              precision    recall  f1-score   support
+
+           A       0.57      0.53      0.55        15
+           B       0.67      0.46      0.55        13
+           C       0.60      0.50      0.55        12
+           D       0.41      0.70      0.52        10
+
+    accuracy                           0.54        50
+   macro avg       0.56      0.55      0.54        50
+weighted avg       0.57      0.54      0.54        50

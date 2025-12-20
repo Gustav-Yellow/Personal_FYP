@@ -1,0 +1,7 @@
+Teacher Model Verification - CR
+Model: deepseek-r1-250528
+Sample Size: 50
+Accuracy: 0.9000
+
+Gold Labels: ['B', 'D', 'A', 'A', 'C', 'D', 'D', 'B', 'D', 'C', 'A', 'C', 'D', 'D', 'B', 'D', 'D', 'C', 'C', 'D', 'D', 'B', 'D', 'A', 'D', 'A', 'B', 'C', 'B', 'C', 'A', 'B', 'C', 'A', 'A', 'A', 'A', 'A', 'C', 'C', 'D', 'B', 'D', 'B', 'C', 'C', 'B', 'C', 'B', 'C']
+Teacher Preds: ['B', 'D', 'A', 'A', 'C', 'D', 'D', 'B', 'D', 'C', 'A', 'B', 'D', 'D', 'B', 'D', 'D', 'C', 'C', 'D', 'C', 'B', 'D', 'A', 'D', 'A', 'B', 'C', 'B', 'C', 'A', 'B', 'C', 'A', 'A', 'B', 'A', 'A', 'C', 'C', 'D', 'B', 'C', 'A', 'C', 'C', 'B', 'C', 'B', 'C']

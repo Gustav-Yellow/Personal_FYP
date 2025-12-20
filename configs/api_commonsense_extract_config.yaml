@@ -1,0 +1,6 @@
+# api_config.yaml
+model_name_or_path: Qwen/Qwen1.5-7B-Chat
+adapter_name_or_path: ./LLaMA-Factory/output/qwen_crmus_mixed_lora_internal_test
+template: qwen
+finetuning_type: lora
+quantization_bit: 4

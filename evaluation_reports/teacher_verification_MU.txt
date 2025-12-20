@@ -1,0 +1,7 @@
+Teacher Model Verification - MU
+Model: deepseek-r1-250528
+Sample Size: 50
+Accuracy: 0.8000
+
+Gold Labels: ['A', 'B', 'A', 'C', 'C', 'C', 'C', 'A', 'B', 'B', 'B', 'B', 'D', 'B', 'D', 'D', 'D', 'D', 'A', 'A', 'D', 'A', 'A', 'A', 'D', 'A', 'A', 'C', 'C', 'C', 'C', 'D', 'C', 'C', 'C', 'D', 'B', 'A', 'D', 'D', 'D', 'B', 'D', 'A', 'A', 'B', 'A', 'A', 'D', 'C']
+Teacher Preds: ['C', 'B', 'C', 'C', 'C', 'C', 'C', 'C', 'B', 'B', 'B', 'B', 'D', 'B', 'D', 'D', 'D', 'D', 'D', 'A', 'D', 'A', 'A', 'A', 'D', 'A', 'A', 'C', 'C', 'D', 'C', 'A', 'B', 'C', 'C', 'C', 'B', 'A', 'C', 'D', 'A', 'B', 'D', 'A', 'A', 'B', 'A', 'A', 'D', 'C']

@@ -1,0 +1,14 @@
+{
+  "crmus_cr": {
+    "file_name": "../processed_data/CRMUS_CR_train.json"
+  },
+  "crmus_mu": {
+    "file_name": "../processed_data/CRMUS_MU_train.json"
+  },
+  "crmus_cr_internal": {
+    "file_name": "../processed_data/CRMUS_CR_internal_train.json"
+  },
+  "crmus_mu_internal": {
+    "file_name": "../processed_data/CRMUS_MU_internal_train.json"
+  }
+}

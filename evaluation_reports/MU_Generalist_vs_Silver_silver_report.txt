@@ -1,0 +1,13 @@
+Task: MU_Generalist_vs_Silver (Silver Standard Evaluation)
+Agreement Rate: 0.5200
+
+              precision    recall  f1-score   support
+
+           A       0.50      0.70      0.58        10
+           B       0.73      0.42      0.53        19
+           C       0.78      0.54      0.64        13
+           D       0.25      0.50      0.33         8
+
+    accuracy                           0.52        50
+   macro avg       0.56      0.54      0.52        50
+weighted avg       0.62      0.52      0.54        50

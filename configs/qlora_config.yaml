@@ -1,0 +1,51 @@
+### model
+model_name_or_path: Qwen/Qwen1.5-7B-Chat  # 推荐模型，中文能力强且开源
+quantization_bit: 4                       # 4-bit 量化，核心省显存配置
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: q_proj, v_proj                          # 对所有层进行微调效果最好
+
+### dataset
+dataset: crmus_cr, crmus_mu                         # CR与MU相结合模型，且没有单独的验证集
+# dataset: crmus_cr_internal, crmus_mu_internal         # CR与MU相结合模型，单独设置验证集
+# dataset: crmus_cr                                   # CR 单独训练模型
+# dataset: crmus_mu                                     # MU 单独训练集
+dataset_dir: ../data                      # 关键！告诉模型去 My_FYP/data 目录下找 dataset_info.json
+template: qwen                            # 对应模型的模板
+cutoff_len: 512                          # 如果显存不够，可以调小到 512
+overwrite_cache: true
+preprocessing_num_workers: 1
+
+### output
+# CR与MU相结合模型，且没有单独的验证集
+output_dir: output/qwen_crmus_mixed_lora
+# CR与MU相结合模型，单独设置验证集
+# output_dir: output/qwen_crmus_mixed_lora_internal_test
+# CR单独训练
+# output_dir: output/qwen_crmus_cr_lora
+# MU单独训练
+# output_dir: output/qwen_crmus_mu_lora
+logging_steps: 10
+save_steps: 100
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1           # 根据显存调整，越小越省
+gradient_accumulation_steps: 8            # 累积梯度，模拟大 Batch
+learning_rate: 2.0e-4                     # QLoRA 通常需要稍大的 LR
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+fp16: true                                # 开启半精度
+
+### evaluation
+val_size: 0.05                     # 稍微切 5% 出来看一眼状态即可，保留更多数据给训练
+per_device_eval_batch_size: 1      # 保持为1，确保不爆显存
+eval_strategy: steps
+eval_steps: 50                    # 每500步测一次，减少等待时间
+load_best_model_at_end: true       # 训练结束时自动加载效果最好的那个模型
+metric_for_best_model: loss        # 以验证集 loss 最低为标准
