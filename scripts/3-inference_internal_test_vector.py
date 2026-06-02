@@ -10,8 +10,10 @@ from sentence_transformers import SentenceTransformer
 from llamafactory.chat import ChatModel
 
 """
-留出法：额外添加向量数据库索引
-在全量训练的mixed本地模型上，对在0-generate_silver_label.py中收取的问题进行回答，并且比较与商用大模型答案之间的准确率
+留出法：额外添加数据库向量索引，也就是 RAG
+在留出法训练的mixed本地模型上运行，对通过 0-split_data.py 分割过后的文件；
+先通过使用 1-process_data_internal_test.py 对用于训练的 80% 的数据集进行 CoT 数据蒸馏，用于模型微调；
+然后再用 剩下的 20% 的测试集中各抽取 50 道 CR 和 MU 问题，然后进行回答。
 输入文件：
 split_data/dev_CRMUS_CR_internal_test.json
 split_data/dev_CRMUS_MU_internal_test.json

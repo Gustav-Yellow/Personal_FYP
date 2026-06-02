@@ -1,0 +1,13 @@
+Task: MU_Generalist_HyDE_Rerank (HyDE + Rerank vs Silver Standard Evaluation)
+Agreement Rate: 0.5000
+
+              precision    recall  f1-score   support
+
+           A       0.40      0.60      0.48        10
+           B       0.86      0.32      0.46        19
+           C       0.56      0.42      0.48        12
+           D       0.42      0.89      0.57         9
+
+    accuracy                           0.50        50
+   macro avg       0.56      0.56      0.50        50
+weighted avg       0.61      0.50      0.49        50

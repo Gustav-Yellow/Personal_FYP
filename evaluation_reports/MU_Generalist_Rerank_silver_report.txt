@@ -1,0 +1,13 @@
+Task: MU_Generalist_Rerank (Rerank vs Silver Standard Evaluation)
+Agreement Rate: 0.6000
+
+              precision    recall  f1-score   support
+
+           A       0.55      0.60      0.57        10
+           B       0.80      0.42      0.55        19
+           C       0.75      0.69      0.72        13
+           D       0.41      0.88      0.56         8
+
+    accuracy                           0.60        50
+   macro avg       0.63      0.65      0.60        50
+weighted avg       0.67      0.60      0.60        50

@@ -1,0 +1,13 @@
+Task: MU Internal Test (Internal Test - Rerank Evaluation)
+Accuracy: 0.5800
+
+              precision    recall  f1-score   support
+
+           A       0.38      0.21      0.27        14
+           B       0.82      0.69      0.75        13
+           C       0.82      0.88      0.85        16
+           D       0.21      0.43      0.29         7
+
+    accuracy                           0.58        50
+   macro avg       0.56      0.55      0.54        50
+weighted avg       0.61      0.58      0.58        50

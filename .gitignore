@@ -1,3 +1,16 @@
 .idea
 main.py
-LLaMA-Factory
+
+# 忽略模型文件夹（匹配 models/ 下的所有子目录）
+models/
+LLaMA-Factory/
+
+# (可选建议) 忽略预测结果和生成的评估报告图片/文本
+# 如果这些结果很大或者不需要团队共享，建议也忽略掉
+#prediction_results/
+#evaluation_reports/*.png
+#evaluation_reports/*.txt
+
+# 忽略 Python 缓存
+__pycache__/
+*.pyc

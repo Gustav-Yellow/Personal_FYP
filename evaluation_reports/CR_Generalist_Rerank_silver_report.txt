@@ -1,0 +1,13 @@
+Task: CR_Generalist_Rerank (Rerank vs Silver Standard Evaluation)
+Agreement Rate: 0.5400
+
+              precision    recall  f1-score   support
+
+           A       0.58      0.50      0.54        14
+           B       0.62      0.45      0.53        11
+           C       0.58      0.54      0.56        13
+           D       0.44      0.67      0.53        12
+
+    accuracy                           0.54        50
+   macro avg       0.56      0.54      0.54        50
+weighted avg       0.56      0.54      0.54        50
